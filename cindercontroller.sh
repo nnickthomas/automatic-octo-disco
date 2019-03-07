@@ -31,6 +31,7 @@ changeFile () {
 #Always make a backup!*******************
 cp $file BACKUP
 cleanFile $file
+cleanFile $file2
 
 
 #Okay 3, 2, 1, Lets Jam******************
