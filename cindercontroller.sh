@@ -6,6 +6,7 @@
 #Before running....
 	#1) DO the prerequisites here https://docs.openstack.org/cinder/queens/install/cinder-controller-install-ubuntu.html
 	#2) Comment out or remove any other options in the [keystone_authtoken] section.
+	#3) Add a section called [keystone_authtoken] to your /etc/cinder/cinder.conf
 
 
 #Static values*************************
@@ -59,6 +60,6 @@ changeFile "\[oslo_concurrency\]" "lock_path = /var/lib/cinder/tmp" $file
 changeFile "\[cinder\]" "os_region_name = RegionOne" $file2
 
 #Finalize Installation
-service nova-api restart
-service cinder-scheduler restart
-service apache2 restart
+#service nova-api restart
+#service cinder-scheduler restart
+#service apache2 restart
