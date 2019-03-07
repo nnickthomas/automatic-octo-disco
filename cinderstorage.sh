@@ -1,6 +1,7 @@
 #!/bin/bash
 
 #A script for configuring default values on cinder
+#Run this on your storage node
 #Maintained by Nick Thomas
 #Before running.....
 	#1) apt install lvm2 thin-provisioning-tools cinder-volume
